@@ -35,4 +35,4 @@ The files in this directory were generated in a separate folder structure than t
 
 This is a complex workflow because I gathered values from the split files. If system memory permits, this process could be simplified by joining all files together, doing necessary operations against all of the data, and **_then_** splitting.
 
-
+Please direct any questions to: bradley.nott@gmail.com
