@@ -20,12 +20,18 @@
 The files in this directory were generated in a separate folder structure than the main repo. You will see references in the notebooks of where I stored, loaded, named, etc. various subsets of the main train/dev/test splits of the dataset. If you want to recreate what I have done, the best way to begin is:
 
 1. Download the json train/dev/test splits of the original data set; wherever you see my directories in the code, change them to the file path(s) on your machine.<br><br>
+
 2. Load the training set json file with `cluster_label_train.ipynb`<br><br>
-3. Complete all cells until you get to the one where you pickle `train_hvar_list`
-4. Complete all steps in `cleanup_book_cutoffs.ipynb`
-5. Load the `cluster_label_dev` and `cluster_label_test` notebooks and complete all cells until you pickle off `dev_hvar_list` and `test_hvar_list`
-6. Joins those pickled lists using `per_book_min_max.ipynb` and pickle off `global_min_max`
-7. Go back to `cluster_label_train.ipynb`, and proceed with the step that loads `global_min_max.pkl`
+
+3. Complete all cells until you get to the one where you pickle `train_hvar_list`<br><br>
+
+4. Complete all steps in `cleanup_book_cutoffs.ipynb`<br><br>
+
+5. Load the `cluster_label_dev` and `cluster_label_test` notebooks and complete all cells until you pickle off `dev_hvar_list` and `test_hvar_list`<br><br>
+
+6. Joins those pickled lists using `per_book_min_max.ipynb` and pickle off `global_min_max`<br><br>
+
+7. Go back to `cluster_label_train.ipynb`, and proceed with the step that loads `global_min_max.pkl`<br><br>
 
 This is a complex workflow because I gathered values from the split files. If system memory permits, this process could be simplified by joining all files together, doing necessary operations against all of the data, and **_then_** splitting.
 
